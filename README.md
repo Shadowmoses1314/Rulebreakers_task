@@ -36,7 +36,7 @@
    ```
 
    Docker Compose соберет и запустит контейнеры для вашего Django-приложения и базы данных SQLite.
-   
+
    ```shell
    docker-compose exec web python manage.py migrate
    ```
@@ -50,6 +50,8 @@
 Примеры некоторых доступных эндпоинтов API:
 
 - `GET /api/tasks/` - Получить список всех задач.
+- `GET /api/tasks/?completed=true` - Получить список выполненых задач.
+- `GET /api/tasks/?completed=false` - Получить список невыполненых задач.
 - `POST /api/tasks/` - Создать новую задачу.
 - `GET /api/tasks/{task_id}/` - Получить информацию о задаче с определенным идентификатором.
 - `PUT /api/tasks/{task_id}/` - Обновить информацию о задаче с определенным идентификатором.
