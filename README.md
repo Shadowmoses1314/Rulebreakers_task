@@ -36,6 +36,10 @@
    ```
 
    Docker Compose соберет и запустит контейнеры для вашего Django-приложения и базы данных SQLite.
+   
+   ```shell
+   docker-compose exec web python manage.py migrate
+   ```
 
 6. Приложение будет доступно по адресу `http://localhost:8000`. Документация API будет доступна по адресу `http://localhost:8000/api/docs/`.
 
