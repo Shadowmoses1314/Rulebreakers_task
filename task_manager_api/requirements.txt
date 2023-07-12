@@ -1,0 +1,7 @@
+Django==4.2.3
+django-filter==23.2
+djangorestframework==3.14.0
+drf-spectacular==0.26.3
+drf-spectacular-sidecar==2023.7.1
+pip==23.1.2
+python-dotenv==1.0.0
